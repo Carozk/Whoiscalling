@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>冒充熟人诈骗类测试-1</title>
+		<style type="text/css">
+			body {
+				background-color: #B0C4DE;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				height: 100%;
+			}
+			
+			#p1 {
+				border-radius: 5%;
+      			border: dotted white;
+				width: 1200px;
+				height: 650px;
+				margin:30px auto;
+				display: flex;
+				overflow: hidden;
+			}
+			
+			#test {
+				margin:0px auto;
+				padding: 20px;
+				width: 1200px;
+				height: 300px;
+			}
+			
+			#p2 {
+				font-family: 华文行楷;
+				font-size: 42px;
+				color: aliceblue;
+			}
+			
+			#p3 {
+				margin-left: 300px;
+				font-family: 华文新魏;
+				font-size: 23px;
+				color: aliceblue;
+			}
+			#cw1 {
+				position: absolute;
+				top: 300px;
+				left: 790px;
+			}
+			
+			#cw2 {
+				position: absolute;
+				top: 350px;
+				left: 750px;
+			}
+			
+			#cw3 {
+				position: absolute;
+				top: 450px;
+				left: 680px;
+			}
+			
+			#zq {
+				position: absolute;
+				top: 390px;
+				left: 750px;
+			}
+			#tijiao{
+				position: absolute;
+				top: 520px;
+				left: 600px;
+			}
+			#ts {
+				position: absolute;
+				top: 560px;
+				left: 560px;
+				font-size: 30px;
+				color: #226788;
+			}
+			#before {
+				position: absolute;
+				left: 100px;;
+				bottom: 150px;
+			}
+			#next {
+				position: absolute;
+				left: 1200px;
+				bottom: 150px;
+			}
+			#before:hover,#next:hover {
+				transform: scale(1.1);
+			}
+			.imgclose{
+			  	position: absolute;
+	      		right: 10px;
+	      		top: 10px;
+			}
+		</style>
+
+		<script>
+			function myFunction() {
+				var abc = document.myform.answer.value;
+				if(abc == "answer1") {
+					document.getElementById("cw1").style.display = "block";
+					document.getElementById("cw2").style.display = "none";
+					document.getElementById("cw3").style.display = "none";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "none";
+				} else if(abc == "answer2") {
+					document.getElementById("cw1").style.display = "none";
+					document.getElementById("cw2").style.display = "block";
+					document.getElementById("cw3").style.display = "none";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "none";
+				} else if(abc == "answer3") {
+					document.getElementById("cw1").style.display = "none";
+					document.getElementById("cw2").style.display = "none";
+					document.getElementById("cw3").style.display = "none";
+					document.getElementById("zq").style.display = "block";
+					document.getElementById("ts").style.display = "none";
+				} else if(abc == "answer4") {
+					document.getElementById("cw1").style.display = "none";
+					document.getElementById("cw2").style.display = "none";
+					document.getElementById("cw3").style.display = "block";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "none";
+				} else {
+					document.getElementById("cw1").style.display = "none";
+					document.getElementById("cw2").style.display = "none";
+					document.getElementById("cw3").style.display = "none";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "block";
+				}
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<div class="imgclose">
+      		<a href="menu.html" ><img src="img/icon/Close.png" title="返回菜单"/> </a>
+    	</div>
+		<div id="p1">
+			<div id="test">
+				<form action="" method="post" name="myform" id="myform">
+					<p id="p2">【1/4】小李接到好友微信消息，对方称好友王某在某地发生了车祸，现在某医院做手术，但手术费不够，
+						要求打款过去，小李该怎末办?</p>
+					<p id="p3"><input type="radio" value="answer1" name="answer" />A.按对方提示的要求打款过去</p>
+					<p id="p3"><input type="radio" value="answer2" name="answer" />B.与对方联系确认事实</p>
+					<p id="p3"><input type="radio" value="answer3" name="answer" />C.打电话和王某本人确认</p>
+					<p id="p3"><input type="radio" value="answer4" name="answer" />D.马上赶去医院</p>
+					<input id="tijiao" type="button" value="你选对了吗？" name="submit" onClick="myFunction()" id="check">
+					<img src="img/srzpcsimg/wrong.png" width="60px" height="45px" id="cw1" style="display:none">
+					<img src="img/srzpcsimg/wrong.png" width="60px" height="45px" id="cw2" style="display:none">
+					<img src="img/srzpcsimg/wrong.png" width="60px" height="45px" id="cw3" style="display:none">
+					<img src="img/srzpcsimg/right.png" width="60px" height="50px" id="zq" style="display:none">
+					<div id="ts" style="display:none">你还没有做题哦！</div>
+				</form>
+			</div>
+			<div id="next">
+				<a href="srcsno2.html"><img src="img/srzpcsimg/next.png" width="200" height="100"></a>
+			</div>
+		</div>
+	</body>
+
+</html>
