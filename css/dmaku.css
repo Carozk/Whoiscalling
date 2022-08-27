@@ -40,6 +40,8 @@ a img,
 .banner {
 	position: relative;
 	overflow: auto;
+	width: 1200px;
+	padding-top: 50px;
 }
 .banner li {
 	list-style: none;
@@ -135,13 +137,13 @@ a img,
 	height: 100px;
 	margin:0px auto;
 	text-align: center;
-	padding: 18px;
+	padding: 10px;
 	display: flex;
 }
 
 .lianjie img{
     width:180px;
-    height: 85px;
+    height: 90px;
     margin-left: 85px;
   	opacity:0.8;
 }
