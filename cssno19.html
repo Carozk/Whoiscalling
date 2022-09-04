@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>判断题</title>
+		<style type="text/css">
+			body {
+				background-color: #B0C4DE;
+				margin: 0;
+			}
+			#topdiv {
+				margin: 0 auto;
+				margin-left: -200px;
+				text-align: center;
+			}
+			.title {
+				font-size: 28px;
+				letter-spacing: 5px;
+			}
+			.a1 {
+				width: 1000px;
+				height: 650px;
+				background-image: url(img/csimg/dtbg1.jpg);
+				border-radius: 10%;
+				position: absolute;
+				top: 70px;
+				left: 100px;
+				margin: auto;
+			}
+			
+			#an1 {
+				position: absolute;
+				top: 200px;
+				left: 150px;
+			}
+			#an2 {
+				position: absolute;
+				top: 200px;
+				left: 310px;
+			}
+			
+			#neirong {
+				position: absolute;
+				top: 120px;
+				left: 220px;
+				width: 650px;
+				height: 500px;
+				font-family: "幼圆";
+				color: rgba(70, 130, 180, 0.8);
+				font-weight: bold;
+			}
+			#neirong h2 {
+				font-size: 28px;
+				line-height: 30px;
+			}
+			#neirong ul {
+				font-size: 24px;
+			}
+			
+			#result1 ,#result2 {
+				position: absolute;
+				top: 450px;
+				left: 240px;
+				width: 600px;
+				height: 200px;
+				font-family: "幼圆";
+				color: rgba(255, 128, 0, 0.8);
+				font-size: 26px;
+			}
+			
+			#backgr{
+				position: absolute;
+				top:100px;
+				right: 100px;
+			}
+			#backgr2{
+				position: absolute;
+				top:160px;
+				right: 100px;
+			}
+			#backgr3{
+				position: absolute;
+				top:220px;
+				right: 100px;
+			}
+			#backgr4{
+				position: absolute;
+				top:280px;
+				right: 100px;
+			}
+			#backgr5{
+				position: absolute;
+				top:340px;
+				right: 100px;
+			}
+			#backgr,#backgr2,#backgr3,#backgr4,#backgr5{
+				font-family:幼圆;
+				font-size: 20px;
+				font-weight:bolder;
+				color: indianred;
+				border-radius: 10px;
+				background: white;
+				box-shadow: 5px 5px 5px 5px rgba(70, 130, 180, 0.8);
+				width: 200px;
+				height: 40px;
+			}
+		</style>
+
+		<script type="text/javascript">
+			function myFunction() {
+				var abc = document.myform.answer.value;
+				if(abc == "answer1") {
+					document.getElementById("result1").style.display = "block";
+					document.getElementById("result2").style.display = "none";
+				} else if(abc == "answer2") {
+					document.getElementById("result2").style.display = "block";
+					document.getElementById("result1").style.display = "none";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="topdiv">
+			<h1 class="title">★  单 选 题  ★</h1>
+		</div>
+		<div class="a1">
+			<div id="neirong">
+				<h2>
+					网络支付时，突然跳出不明弹窗要求验证本人身份信息，你应该继续填写，不用管它。
+				</h2>
+				<form action="" method="post" name="myform" id="myform">
+					<ul style="list-style:none;">
+						<li id="an1"><input type="radio" value="answer1" name="answer" onClick="myFunction()" />对</li>
+						<li id="an2"><input type="radio" value="answer2" name="answer" onClick="myFunction()" />错</li>
+					</ul>
+				</form>
+			</div>
+			<div id="result1" style="display:none">
+				回答错误！解析:网购支付时，手机上跳出了不明窗口需要验证身份的，应该及时关闭支付。以免被“黑客”拦截，获取你的身份及银行卡信息，非法盗刷。
+			</div>
+			<div id="result2" style="display:none">
+				回答正确！解析:网购支付时，手机上跳出了不明窗口需要验证身份的，应该及时关闭支付。以免被“黑客”拦截，获取你的身份及银行卡信息，非法盗刷。
+			</div>
+
+		</div>
+		<input type="button" id="backgr" value="返回首页" onclick="javascript:window.location.href='index.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+			<input type="button" id="backgr2" value="返回索引界面" onclick="javascript:window.location.href='menu.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+			<input type="button" id="backgr3" value="返回知识学习" onclick="javascript:window.location.href='zshg.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+			<input type="button" id="backgr4" value="上一题" onclick="javascript:window.location.href='cssno18.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+			
+	</body>
+
+</html>

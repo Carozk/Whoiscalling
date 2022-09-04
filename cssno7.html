@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>单选题</title>
+		<link rel="stylesheet" href="css/zpcs.css">
+		<style type="text/css">
+			#p3 {
+				margin-left: 160px;
+			}
+			#tijiao{
+				position: absolute;
+				top: 500px;
+				left: 580px;
+			}
+			#cw,#zq,#ts {
+			 	position: absolute;
+				top:570px;
+				left:570px;
+			}
+			#backgr{
+				position: absolute;
+				top:100px;
+				right: 100px;
+			}
+			#backgr2{
+				position: absolute;
+				top:160px;
+				right: 100px;
+			}
+			#backgr3{
+				position: absolute;
+				top:220px;
+				right: 100px;
+			}
+			#backgr4{
+				position: absolute;
+				top:280px;
+				right: 100px;
+			}
+			#backgr5{
+				position: absolute;
+				top:340px;
+				right: 100px;
+			}
+			#backgr,#backgr2,#backgr3,#backgr4,#backgr5{
+				font-family:幼圆;
+				font-size: 20px;
+				font-weight:bolder;
+				color: indianred;
+				border-radius: 10px;
+				background: white;
+				box-shadow: 5px 5px 5px 5px rgba(70, 130, 180, 0.8);
+				width: 200px;
+				height: 40px;
+			}
+		</style>
+		<script>
+			function myFunction() {
+				var abc = document.myform.answer.value;
+				if(abc == "answer1") {
+					document.getElementById("cw").style.display = "none";
+					document.getElementById("zq").style.display = "block";
+					document.getElementById("ts").style.display = "none";
+				} else if(abc == "answer2") {
+					document.getElementById("cw").style.display = "block";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "none";
+				}else if(abc == "answer3") {
+					document.getElementById("cw").style.display = "block";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "none";
+				}else if(abc == "answer4") {
+					document.getElementById("cw").style.display = "block";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "none";
+				}else {
+					document.getElementById("cw").style.display = "none";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "block";
+				}
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<div id="p1">
+			<div id="test">
+				<form action="" method="post" name="myform" id="myform">
+					<p id="p2">同学李某接到一个自称为淘宝客服的电话，称其注册了网络贷款信息，现需要注销，否则影响其征信，要求其加对方为QQ好友，指导其注销操作。李某该怎么办?( )</p>
+					<p id="p3"><input type="radio" value="answer1" name="answer" />A.挂掉对方电话，然后打110或辖区派出所电话报警，寻求警察帮助</p>
+					<p id="p3"><input type="radio" value="answer2" name="answer" />B.按对方要求加对方为QQ好友</p>
+					<p id="p3"><input type="radio" value="answer3" name="answer" />C.按照对方要求在各网贷平台进行操作</p>
+					<p id="p3"><input type="radio" value="answer4" name="answer" />D.向对方提供的平台输入自己的身份信息、银行卡号和密码</p>
+					<input id="tijiao" type="button" value="提交答案" name="submit" onClick="myFunction()" id="check">
+					<p id="cw" style="display:none"/>回 答 错 误 ！</p>
+					<p id="zq" style="display:none"/>回 答 正 确 ！</p>
+					<div id="ts" style="display:none">还没有做题哦！</div>
+				</form>
+			</div>
+			<input type="button" id="backgr" value="返回首页" onclick="javascript:window.location.href='index.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+			<input type="button" id="backgr2" value="返回索引界面" onclick="javascript:window.location.href='menu.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+			<input type="button" id="backgr3" value="返回知识学习" onclick="javascript:window.location.href='mcgwptkfzp.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+			<input type="button" id="backgr4" value="上一题" onclick="javascript:window.location.href='cssno6.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+			<input type="button" id="backgr5" value="下一题" onclick="javascript:window.location.href='cssno8.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+		</div>
+	</body>
+
+</html>
