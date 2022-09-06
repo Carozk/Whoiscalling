@@ -6,29 +6,29 @@ body {
 }
 
 #box {
-	height: 700px;
-	width: 1380px;
+	height: 650px;
+	width: 1360px;
 	position: fixed;
 	top: 10%;
-	richness: 10%;
 	background-image: url(../img/csimg/dtbg1.jpg);
 	background-size: cover;
 	overflow: hidden;
+	border-radius: 5%;
+	border: 5px solid rgba(70, 130, 180, 0.8);
 }
 
 .show {
 	position: absolute;
 	width: 1300px;
 	cursor: pointer;
-	margin-top: 100px;
 	margin-left: 10px;
-	left: 25px;
+	left: 5px;
 }
 .show .showitem {
 	width: 200px;
 	height: 150px;
 	display: block;
-	margin: 10px;
+	margin: 5px;
 }
 .show.topBottom {
 	width: 1300px;
@@ -41,7 +41,7 @@ body {
 	float: left;
 }
 .showtop {
-	margin-top: -50px;
+	margin-top: 20px;
 }
 .showbottom {
 	margin-top: 330px;
@@ -49,18 +49,18 @@ body {
 
 .canvas {
 	width: 1350px;
-	height: 450px;
+	height: 530px;
 	position: absolute;
 	left: 0px;
-	top: 120px;
+	top: 100px;
 	z-index: -1;
 }
 .backcanvas {
 	width: 1350px;
-	height: 450px;
+	height: 530px;
 	position: absolute;
 	left: 0px;
-	top: 120px;
+	top: 100px;
 	z-index: -2;
 }
 
