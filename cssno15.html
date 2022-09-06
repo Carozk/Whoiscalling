@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<title>单选题</title>
+		<style type="text/css">
+			#p3 {
+				margin-left: 200px;
+			}
+			#tijiao{
+				position: absolute;
+				top: 420px;
+				left: 40%;
+			}
+			#cw,#zq,#ts {
+			 	position: absolute;
+				top:510px;
+				left:15%;
+				text-align: center;
+			}
+			#backgr{
+				position: absolute;
+				top:3%;
+				right: 1%;
+			}
+			#backgr2{
+				position: absolute;
+				top:9%;
+				right: 1%;
+			}
+			#backgr3{
+				position: absolute;
+				top:15%;
+				right: 1%;
+			}
+			#backgr4{
+				position: absolute;
+				top:21%;
+				right: 1%;
+			}
+			#backgr5{
+				position: absolute;
+				top:27%;
+				right: 1%;
+			}
+			#backgr,#backgr2,#backgr3,#backgr4,#backgr5{
+				font-family:幼圆;
+				font-size: 20px;
+				font-weight:bolder;
+				color: indianred;
+				border-radius: 10px;
+				background: white;
+				box-shadow: 5px 5px 5px 5px rgba(70, 130, 180, 0.8);
+				width: 10%;
+				height: 4%;
+			}
+		</style>
+		<link rel="stylesheet" href="css/zpcs.css">
+		<script>
+			function myFunction() {
+				var abc = document.myform.answer.value;
+				if(abc == "answer1") {
+					document.getElementById("cw").style.display = "block";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "none";
+				} else if(abc == "answer2") {
+					document.getElementById("cw").style.display = "none";
+					document.getElementById("zq").style.display = "block";
+					document.getElementById("ts").style.display = "none";
+				}else {
+					document.getElementById("cw").style.display = "none";
+					document.getElementById("zq").style.display = "none";
+					document.getElementById("ts").style.display = "block";
+				}
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<div id="p1">
+			<form action="" method="post" name="myform" id="myform">
+				<p id="p2">【3/4】热爱网购的小王因为没有抢到自己心仪已久的鞋子，遂通过在网上添加的代购购买。5日后，代购称“商品被海关扣下，要加缴关税”为由向小王索要1000元的“关税缴纳金”此时小王应该？</p>
+				<p id="p3"><input type="radio" value="answer1" name="answer" />A、赶快向代购支付“关税缴纳金” 等着新衣服去约会</p>
+				<p id="p3"><input type="radio" value="answer2" name="answer" />B、立即拨打报警电话。</p>
+				<input id="tijiao" type="button" value="提交答案" name="submit" onClick="myFunction()" id="check">
+				<p id="cw" style="display:none"/>回 答 错 误 ！
+警方提醒：犯罪分子假冒成正规微商，以优惠、打折、海外代购等为诱饵，待买家付款后，又以“商品被海关扣下，要加缴关税”等为由要求加付款项实施诈骗。</p>
+				<p id="zq" style="display:none"/>回 答 正 确 ！
+警方提醒：犯罪分子假冒成正规微商，以优惠、打折、海外代购等为诱饵，待买家付款后，又以“商品被海关扣下，要加缴关税”等为由要求加付款项实施诈骗。</p>
+				<div id="ts" style="display:none">还没有做题哦！</div>
+			</form>
+			<input type="button" id="backgr" value="返回首页" onclick="javascript:window.location.href='index.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+			<input type="button" id="backgr2" value="返回索引界面" onclick="javascript:window.location.href='menu.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+			<input type="button" id="backgr3" value="返回知识学习" onclick="javascript:window.location.href='zshg.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+			<input type="button" id="backgr4" value="上一题" onclick="javascript:window.location.href='cssno14.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+			<input type="button" id="backgr5" value="下一题" onclick="javascript:window.location.href='cssno16.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+		</div>
+	</body>
+
+</html>
