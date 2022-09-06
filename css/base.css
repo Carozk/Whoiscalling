@@ -18,7 +18,7 @@ body {
 
 .show {
 	position: absolute;
-	width: 1380px;
+	width: 1300px;
 	cursor: pointer;
 	margin-top: 100px;
 	margin-left: 10px;
@@ -31,7 +31,7 @@ body {
 	margin: 10px;
 }
 .show.topBottom {
-	width: 1380px;
+	width: 1300px;
 }
 .show.topBottom .showitem {
 	float: left;
@@ -48,7 +48,7 @@ body {
 }
 
 .canvas {
-	width: 1400px;
+	width: 1350px;
 	height: 450px;
 	position: absolute;
 	left: 0px;
@@ -56,7 +56,7 @@ body {
 	z-index: -1;
 }
 .backcanvas {
-	width: 1400px;
+	width: 1350px;
 	height: 450px;
 	position: absolute;
 	left: 0px;
@@ -66,16 +66,16 @@ body {
 
 .savePair img {
 	position: absolute;
-	top: 550px;
-	right: 0px;
+	bottom: 6%;
+	right: 0.5%;
 }
 .savePair img:hover {
 	transform: scale(1.1);
 }
 #a1 {
 	position: absolute;
-	right: 10px;
-	top: 670px;
+	right: 1%;
+	bottom: 1%;
 	font-family: "幼圆";
 	color: #3B3B3B;
 	font-weight: bold;
