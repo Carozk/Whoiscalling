@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<title>判断题</title>
+		<style type="text/css">
+			body {
+				background-image: url(img/csimg/zsbg.png);
+      			background-size: cover;
+      			overflow: hidden;
+				margin: 0;
+			}
+			#topdiv {
+				margin: 0 auto;
+				margin-left: -200px;
+				text-align: center;
+			}
+			.title {
+				font-size: 28px;
+				letter-spacing: 5px;
+			}
+			.a1 {
+				width: 60%;
+				height: 80%;
+				background-image: url(img/csimg/dtbg1.jpg);
+				background-size: cover;
+				border-radius: 10%;
+				position: absolute;
+				top: 100px;
+				left: 20%;
+				margin: auto;
+			}
+			#an1 {
+				position: absolute;
+				top: 200px;
+				left: 30%;
+			}
+			#an2 {
+				position: absolute;
+				top: 200px;
+				left: 60%;
+			}
+			#neirong {
+				position: absolute;
+				top: 10%;
+				left: 10%;
+				width: 80%;
+				height: 40%;
+				font-family: "幼圆";
+				color: rgba(70, 130, 180, 0.8);
+				font-weight: bold;
+			}
+			#neirong h2 {
+				font-size: 32px;
+				line-height: 36px;
+			}
+			#neirong ul {
+				font-size: 28px;
+			}
+			#result1 ,#result2 {
+				position: absolute;
+				top: 60%;
+				left: 10%;
+				padding: 5px;
+				width: 80%;
+				border-radius: 10px;
+				border: 3px dashed #B0C4DE;
+				font-family: "幼圆";
+				color: rgba(255, 128, 0, 0.8);
+				font-size: 30px;
+				text-align: center;
+			}
+			#backgr{
+				position: absolute;
+				top:3%;
+				right: 1%;
+			}
+			#backgr2{
+				position: absolute;
+				top:9%;
+				right: 1%;
+			}
+			#backgr3{
+				position: absolute;
+				top:15%;
+				right: 1%;
+			}
+			#backgr4{
+				position: absolute;
+				top:21%;
+				right: 1%;
+			}
+			#backgr,#backgr2,#backgr3,#backgr4{
+				font-family:幼圆;
+				font-size: 20px;
+				font-weight:bolder;
+				color: indianred;
+				border-radius: 10px;
+				background: white;
+				box-shadow: 5px 5px 5px 5px rgba(70, 130, 180, 0.8);
+				width: 10%;
+				height: 4%;
+			}
+		</style>
+
+		<script type="text/javascript">
+			function myFunction() {
+				var abc = document.myform.answer.value;
+				if(abc == "answer1") {
+					document.getElementById("result1").style.display = "none";
+					document.getElementById("result2").style.display = "block";
+				} else if(abc == "answer2") {
+					document.getElementById("result1").style.display = "block";
+					document.getElementById("result2").style.display = "none";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="topdiv">
+			<h1 class="title">★  判 断 题  ★</h1>
+		</div>
+		<div class="a1">
+			<div id="neirong">
+				<h2>【1/3】“您好，由于快递员疏忽，您的快递在运送途中丢失，我们将赔偿你2倍损失，点击以下链接填写个人信息。”接到类似电话，你应该联系官方客服查询快递信息。</h2>
+				<form action="" method="post" name="myform" id="myform">
+					<ul style="list-style:none;">
+						<li id="an1"><input type="radio" value="answer1" name="answer" onClick="myFunction()" />对</li>
+						<li id="an2"><input type="radio" value="answer2" name="answer" onClick="myFunction()" />错</li>
+					</ul>
+				</form>
+			</div>
+			<div id="result1" style="display:none"><b>回答错误！</b>解析:遇到所谓客服称快递遗失主动向您赔偿，并要求您根据链接填写个人信息时，切勿轻信，应通过官方渠道联系客服确认。</div>
+			<div id="result2" style="display:none"><b>回答正确！</b>解析:遇到所谓客服称快递遗失主动向您赔偿，并要求您根据链接填写个人信息时，切勿轻信，应通过官方渠道联系客服确认。</div>
+
+		</div>
+		<input type="button" id="backgr" value="返回首页" onclick="javascript:window.location.href='index.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+		<input type="button" id="backgr2" value="返回索引界面" onclick="javascript:window.location.href='menu.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+		<input type="button" id="backgr3" value="返回知识学习" onclick="javascript:window.location.href='zshg.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+		<input type="button" id="backgr4" value="下一题" onclick="javascript:window.location.href='cssno18.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+		
+	</body>
+
+</html>
