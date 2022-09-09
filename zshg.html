@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>知识回顾</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+			html,
+			body {
+				margin: 0px;
+				padding: 0px;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				background-color: #B0C4DE;
+				background-size: cover;
+			}
+			#topdiv{
+				margin: 0 auto;
+				margin-left: -180px;
+				text-align: center;
+			}
+			.title{
+				font-family:幼圆;
+				font-weight: bolder;
+				font-size:58px;
+				letter-spacing: 9px;
+			}
+			#view_box {
+				position: relative;
+				width: 1066px;
+				height: 600px;
+				position: absolute;
+				bottom: 12%;
+				right: 25%;
+				background-image: url(img/hgimg/zshg1.png);
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			.btn_list {
+				position: absolute;
+				bottom: 10px;
+				width: 100%;
+			}
+			ul {
+				list-style-type: none;
+				width: 100%;
+				margin: auto;
+				display: flex;
+				align-items: center;
+			}
+			li {
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				margin: auto;
+				text-align: center;
+				border-radius: 30px;
+				cursor: pointer;
+				background-color: rgba(70, 130, 180, 0.8);
+			}
+			#backgr {
+				position: absolute;
+				top: 3%;
+				right: 1%;
+			}
+			#backgr2 {
+				position: absolute;
+				top: 9%;
+				right: 1%;
+			}
+			#backgr3 {
+				position: absolute;
+				top: 15%;
+				right: 1%;
+			}
+			#backgr4 {
+				position: absolute;
+				top: 21%;
+				right: 1%;
+			}
+			#backgr5 {
+				position: absolute;
+				top: 27%;
+				right: 1%;
+			}
+			#backgr,#backgr2,#backgr3,#backgr4,#backgr5 {
+				font-family: 幼圆;
+				font-size: 20px;
+				font-weight: bolder;
+				color: indianred;
+				border-radius: 10px;
+				background: white;
+				box-shadow: 5px 5px 5px 5px rgba(70, 130, 180, 0.8);
+				width: 10%;
+				height: 4%;
+			}
+			.img1{
+				width: 15%;
+				height: 35%;
+				position: absolute;
+				bottom: 0;
+				right:0;
+			}
+		</style>
+		<script type="text/javascript">
+			var index = 1; //图片id
+			window.onload = function() {
+				//给li添加鼠标点击事件
+				for(var i = 1; i <= 3; i++) {
+					document.getElementById("li" + i).onclick = function() {
+						index = this.innerHTML;
+						setAnimate();
+					}
+				}
+			}
+			//切换图片
+			function setAnimate() {
+				if(index > 3) {
+					index = 3;
+				}
+				if(index < 1) {
+					index = 1;
+				}
+				//设置view_box背景图片
+				document.getElementById("view_box").style.backgroundImage = "url('img/hgimg/zshg" + index + ".png')";
+				//设置li背景色
+				for(var i = 1; i <= 3; i++) {
+					document.getElementById("li" + i).style.backgroundColor = "rgba(70, 130, 180, 0.8)";
+				}
+				document.getElementById("li" + index).style.backgroundColor = "rgba(255, 128, 0, 0.8)";
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="topdiv">
+			<h1 class="title">★ 知 识 回 顾 ★</h1>
+		</div>
+		<div id="view_box">
+			<div class="btn_list">
+				<ul>
+					<li id="li1">1</li>
+					<li id="li2">2</li>
+					<li id="li3">3</li>
+				</ul>
+			</div>
+		</div>
+		<input type="button" id="backgr" value="返回首页" onclick="javascript:window.location.href='index.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+		<input type="button" id="backgr2" value="返回索引界面" onclick="javascript:window.location.href='menu.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+		<input type="button" id="backgr3" value="连一连" onclick="javascript:window.location.href='game1.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+		<input type="button" id="backgr4" value="单选题" onclick="javascript:window.location.href='cssno13.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+		<input type="button" id="backgr5" value="判断题" onclick="javascript:window.location.href='cssno17.html'" onmouseover="this.style.backgroundColor='rgba(255, 180, 0, 0.8)'" onmouseout="this.style.backgroundColor='white'" style="background-color: white;">
+		<img src="img/zs4.png" class="img1">
+	</body>
+
+</html>
